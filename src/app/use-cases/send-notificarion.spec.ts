@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-empty-function */
 import { InMemoryNotificationsRepository } from '../../../test/repositories/in-memory-repository';
 import { SendNotification } from './send-notification';
 

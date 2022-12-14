@@ -1,5 +1,5 @@
+import { NotificationsRepository } from 'src/app/repositories/notifications-repository';
 import { Notification } from '../../src/app/entities/notification';
-import { NotificationsRepository } from '../../src/app/repositories/app-repository';
 
 export class InMemoryNotificationsRepository
   // eslint-disable-next-line prettier/prettier

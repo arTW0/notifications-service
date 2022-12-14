@@ -1,12 +1,9 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './infra/app.controller';
-import { AppService } from './infra/app.service';
-import { PrismaService } from './infra/prisma.service';
+import { DatabaseModule } from './infra/database/database.module';
+import { HttpModule } from './infra/database/http/http.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService, PrismaService],
+  imports: [HttpModule, DatabaseModule],
 })
 // eslint-disable-next-line prettier/prettier
 export class AppModule { }
